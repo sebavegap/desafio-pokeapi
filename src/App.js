@@ -15,11 +15,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Navigation />
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pokemones" element={<Pokemones />} />
           <Route path="/pokemones/:id" element={<CardR />} />
         </Routes>
+    
       </BrowserRouter>
 
     </div>

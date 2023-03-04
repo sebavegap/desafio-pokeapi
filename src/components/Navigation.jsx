@@ -12,7 +12,7 @@ const setActiveClass = ({ isActive }) =>  (isActive) ? 'active' : 'inactive' ;
 
   return (
     <div>
-        <Navbar className='navigation p-3'>
+        <Navbar className='navigation p-3 fixed-top'>
       {/* con el componente NavLink y isActive, podemos cambiar atributos dependiendo de si
       no encontramos en esa página o no */}
         <NavLink className={ setActiveClass } to='/'>
