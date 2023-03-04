@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Pokemones from "./pages/Pokemones";
 
+import CardR from "./pages/CardR";
+
 function App() {
   return (
     <div className="App">
@@ -13,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pokemones" element={<Pokemones />} />
+          <Route path="/pokemones/:id" element={<CardR />} />
         </Routes>
       </BrowserRouter>
     </div>
