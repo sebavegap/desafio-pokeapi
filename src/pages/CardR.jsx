@@ -56,7 +56,7 @@ const CardR = () => {
                 <Card style={{ width: '80rem' }} className=' align-items-center '>
                     <Card.Img variant="top" src={datosPokemon.sprites.other["official-artwork"].front_default} className='w-50'/>
                     <Card.Body>
-                        <Card.Title><h1>{datosPokemon.forms[0].name}</h1></Card.Title>
+                        <Card.Title><h1>{datosPokemon.forms[0].name.charAt(0).toUpperCase()+datosPokemon.forms[0].name.slice(1)}</h1></Card.Title>
                         <Card.Text>
                             
                             {datosPokemonSpecies.flavor_text_entries[26].flavor_text}
